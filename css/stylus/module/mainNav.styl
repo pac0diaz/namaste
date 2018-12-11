@@ -1,0 +1,102 @@
+.mainNav
+  transition 300ms all ease-in-out
+  display flex
+  
+  li
+    font-size 1.2rem  
+    display inline
+    padding 0px 16px
+    
+  a
+  color $white
+  transition: color 0.25s ease-out; 
+  -webkit-transition: color 0.25s ease-out; 
+  -moz-transition: color 0.25s ease-out; 
+  -o-transition: color 0.25s ease-out;
+  
+  a:hover
+    color $yellow
+  
+      
+  +below(600px)
+    display none
+    padding-top 20px 
+
+  &-item
+    color $blue
+    text-decoration none
+    
+    &.is-inactive
+      display none
+      border 1px solid yellow
+    
+    &.is-none
+      display none   
+    
+    &:last-child
+      margin-right 0
+    
+    +above(600px)
+      color white
+  
+  &-trigger
+    display flex
+    padding 0
+    width 2rem
+    height 2rem
+    border 0
+    background none
+    align-items center
+          
+  &.is-active
+    position fixed
+    top 90px
+    right 0
+    bottom 0
+    left 0
+    background-color $blue
+    display flex
+    flex-direction column
+    font-size 20px
+    
+    li
+      display flex
+    
+    a
+      color white 
+      padding 10px 10px
+
+    &.mainNav-item
+      display block
+      margin-right 0
+      padding-top 2rem
+      padding-bottom 2rem
+      width 100%
+      text-align center
+      color white 
+      
+      &:last-child
+        border-bottom 1px solid rgba($yellow, .5)
+      
+.burguerIcon
+$burguerIcon
+  position relative
+  width 100%
+  height 3px
+  background-color white
+  
+  &:before
+  &:after
+    position absolute
+    width 100%
+    height 3px
+    content ''
+    top -.75rem
+    left 0
+    background-color inherit
+    
+  &:after
+    top .75rem
+    
+  +above($tablet)
+    display none

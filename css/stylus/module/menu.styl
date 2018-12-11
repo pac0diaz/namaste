@@ -1,0 +1,86 @@
+.menu
+	wrapped()
+	background-color $blue
+	display flex
+	flex-direction column
+	padding-bottom 50px
+	
+	h1
+		color $white
+	
+		
+.menuTitle
+	margin-left auto
+	margin-right auto  
+	margin-top 200px
+	margin-bottom 36px   
+
+	h1
+		text-align center
+
+.menuContainer
+	
+	h1
+		padding-top 24px
+		padding-bottom 24px
+	
+	h2
+		color $yellow
+
+	h3
+		color $white
+
+	
+	p
+		color $white	
+
+.menuItem
+	margin 0 auto 
+	width 90% 
+	display flex
+	justify-content space-between
+	padding 0px 12px
+	margin-top 36px
+	
+	img
+		width 218px
+		height 218px  
+	
+	+below($mobile)
+		flex-direction column
+	
+
+.halfMenu
+	display flex
+	
+	+below($mobile)
+		flex-direction column
+	
+.halfContainer
+	width 50%
+	display flex
+	flex-direction column
+	padding 0px 40px
+	margin-top 36px
+		
+	+below($mobile)
+		margin 0 auto
+		padding 0px
+		width 90%
+		justify-content center
+		align-content center
+		
+
+.menuItemHalf
+	flex-direction row
+	
+	h2
+		float left
+	
+	h3 
+		float right
+	
+	+below($mobile)
+		padding 0px
+		width 100%
+		flex-direction column

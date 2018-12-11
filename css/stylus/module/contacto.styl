@@ -1,0 +1,101 @@
+.contacto
+	wrapped()
+	height 100vh
+	width 100%
+	padding-top 100px
+	padding-bottom 50px    
+	background-color $blue
+
+ 
+	h1
+		color $white
+		text-transform uppercase
+		margin-bottom 20px
+	
+	p
+		color $white 
+	
+	h4
+		color $white
+		
+	+below($mobile)
+		height 100% 
+
+.contactContainer
+	display flex
+	-webkit-flex-direction row 
+	-ms-flex-direction row 
+	flex-direction row
+	
+	+below($mobile)
+		flex-direction column
+
+
+.form
+	color $yellow
+	width 50% 
+	padding 0 20px
+	
+	+below($mobile)
+		width 100% 	
+
+	input:not([type=submit])
+	textarea
+	select
+		apperence none
+		margin-bottom 1rem
+		border 1px solid $white
+		width 100%
+		padding .5rem
+		border-radius 4px
+		
+		&:focus
+		&.focus
+			outline 0
+	
+	label
+		display block
+		color $yellow
+		margin-top 0
+		margin-right auto
+		margin-left auto 				 
+
+.directions
+	width 50%
+	padding 0 20px
+	
+	+below($mobile)
+		width 100%
+		 		
+#enviar
+	font-family: 'Montserrat', sans-serif;
+	font-weight 900
+	padding 8px 56px 
+	float right
+	background-color $yellow
+	border none
+	color $black
+	font-size 16px
+	font-weight bold
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	
+	&:hover
+		color $black
+		box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+		transform: translateY(-2px)
+		
+
+.button
+	padding 8px 16px
+	color $black
+	background $black
+	text-decoration none
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	
+	&:hover
+		color white
+		box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+		transform: translateY(-2px)
+		   		

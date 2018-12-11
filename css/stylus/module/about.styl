@@ -1,0 +1,49 @@
+.about
+	wrapped()
+	// background url('/img/plate2.png') center no-repeat
+	// background-position: bottom 5px right 7px;
+	height 100vh
+	display flex
+	flex-direction row
+	justify-content center
+	-webkit-align-items center 
+	align-items center
+	background-color $white 
+	
+  	
+	
+	h1
+		color $blue 
+		
+	p
+		width 460px
+	
+	+below($mobile)
+		justify-content center
+		-webkit-align-items center 
+		align-items center		
+		flex-direction column
+		
+		p
+			padding-top 50px
+			padding-bottom 50px
+			width 90%
+			margin 0 auto
+		
+		h1
+			padding-top 80px 
+			padding-left 10px
+				
+
+.plateAbout
+	float right 
+	align-self flex-end
+	
+
+	+below($mobile)
+		
+		img
+			width 450px
+			padding-bottom 60px  
+
+			

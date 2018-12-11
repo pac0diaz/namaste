@@ -1,0 +1,30 @@
+.mainHeader
+  wrapped()
+  z-index 10
+  display flex
+  justify-content space-between
+  align-items center
+  position fixed 0
+  height 90px
+  transition 300ms all ease-in-out
+  
+  &.fixed  
+  &.is-active
+  &.is-fixed
+    background: $black;
+    color $white 
+    
+    .mainLogo__white
+      display none
+      
+    .mainLogo__blue
+      display block
+    
+    .mainNav-item
+      color $white
+      
+    .burguerIcon
+      background-color $white
+
+  +below(1220px)
+    wrapped(90%)
